@@ -1,11 +1,10 @@
 # frozen_string_literal: true
-# coding: utf-8
 
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 # Load the version directly from the source tree.
-require 'sinatra_scaffold/version'
+require "sinatra_scaffold/version"
 
 Gem::Specification.new do |spec|
   spec.name = "sinatra-scaffold"
@@ -25,7 +24,7 @@ Gem::Specification.new do |spec|
   spec.metadata["source_code_uri"] = "https://github.com/joaoGabriel55/sinatra-scaffold"
   spec.metadata["changelog_uri"] = "https://github.com/joaoGabriel55/sinatra-scaffold/blob/main/CHANGELOG.md"
 
-  spec.files = Dir['*.md', 'bin/*', 'lib/**/*.rb']
+  spec.files = Dir["*.md", "bin/*", "lib/**/*.rb"]
   spec.executables = ["sinatra-scaffold"]
   spec.require_paths = ["lib"]
 
