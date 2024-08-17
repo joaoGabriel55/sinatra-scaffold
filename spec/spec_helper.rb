@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "sinatra-scaffold"
+require "sinatra_scaffold"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
