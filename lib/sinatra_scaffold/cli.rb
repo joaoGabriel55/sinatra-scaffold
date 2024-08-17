@@ -154,7 +154,7 @@ module SinatraScaffold
       RUBY
 
       File.write("#{app_name}/README.md", <<~RUBY)
-                # #{app_name}
+        # #{app_name}
 
         My Sinatra application
 
