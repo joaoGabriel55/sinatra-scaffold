@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in sinatra_scaffold.gemspec
+# Specify your gem's dependencies in sinatra-scaffold.gemspec
 gemspec
 
 gem "rake", "~> 13.0"
