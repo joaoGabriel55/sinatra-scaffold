@@ -27,7 +27,7 @@ module SinatraScaffold
 
     def create_main_files(app_name)
       File.write("#{app_name}/config.ru", <<~RUBY)
-        require "./app"
+        require "./server"
 
         run Sinatra::Application
       RUBY
@@ -131,6 +131,7 @@ module SinatraScaffold
         gem "sinatra"
         gem "dotenv"
         gem "rake"
+        gem "rackup"
 
         group :test do
           gem "rack-test"
@@ -140,6 +141,7 @@ module SinatraScaffold
         group :development, :test do
           gem "pry"
           gem "standard"
+          gem "rerun"
         end
       RUBY
 
@@ -159,9 +161,17 @@ module SinatraScaffold
         My Sinatra application
 
         ## Running
-        Run:
+        Using ruby:
         ```sh
         ruby server.rb
+        ```
+        Running watching changes:
+        ```sh
+        rerun ruby server.rb
+        ```
+        Running with rackup:
+        ```sh
+        bundle exec rackup config.ru -p 3000
         ```
 
         ## Testing

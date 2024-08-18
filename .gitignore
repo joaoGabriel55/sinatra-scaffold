@@ -10,4 +10,4 @@
 # rspec failure tracking
 .rspec_status
 
-sinatra-scaffold-0.1.0.gem
+*.gem
