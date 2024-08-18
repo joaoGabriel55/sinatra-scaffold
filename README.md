@@ -30,7 +30,7 @@ bundle install
 Build and install gem locally
 
 ```sh
-gem build sinatra-scaffold.gemspec && gem install ./sinatra-scaffold-0.1.0.gem
+gem build sinatra-scaffold.gemspec && gem install ./sinatra-scaffold-[version].gem
 ```
 
 Run lint
