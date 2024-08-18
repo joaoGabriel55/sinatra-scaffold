@@ -27,7 +27,7 @@ module SinatraScaffold
 
     def create_main_files(app_name)
       File.write("#{app_name}/config.ru", <<~RUBY)
-        require "./app"
+        require "./server"
 
         run Sinatra::Application
       RUBY
@@ -131,6 +131,7 @@ module SinatraScaffold
         gem "sinatra"
         gem "dotenv"
         gem "rake"
+        gem "rackup"
 
         group :test do
           gem "rack-test"
