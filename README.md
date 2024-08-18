@@ -1,4 +1,5 @@
 # SinatraScaffold
+[![Gem Version](https://badge.fury.io/rb/sinatra-scaffold.svg)](https://badge.fury.io/rb/sinatra-scaffold)
 
 A scaffold cli for the Sinatra web gem.
 
