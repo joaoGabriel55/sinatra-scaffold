@@ -141,6 +141,7 @@ module SinatraScaffold
         group :development, :test do
           gem "pry"
           gem "standard"
+          gem "rerun"
         end
       RUBY
 
@@ -160,9 +161,17 @@ module SinatraScaffold
         My Sinatra application
 
         ## Running
-        Run:
+        Using ruby:
         ```sh
         ruby server.rb
+        ```
+        Running watching changes:
+        ```sh
+        rerun ruby server.rb
+        ```
+        Running with rackup:
+        ```sh
+        bundle exec rackup config.ru -p 3000
         ```
 
         ## Testing
